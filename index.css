@@ -75,11 +75,11 @@
     margin-top: 16px;
 }
 
-
+/*
 #btnNav:hover {
     color: #fff;
     background-color: rgb(90, 92, 88);
-}
+} */
 
 /* ******************************************************* */
 /* ******************************************************* */
@@ -114,7 +114,7 @@
     border-radius: 10px;
 }
 
-#btnNotes {
+/* #btnNotes {
 
     border-radius: 10px;
     border: 2px solid black;
@@ -129,7 +129,7 @@
 #btnNotes:hover {
     color: #fff;
     background-color: rgb(90, 92, 88);
-}
+} */
 
 /* ******************************************************* */
 /* ******************************************************* */
@@ -158,7 +158,7 @@
 }
 
 
-.delete {
+/* .delete {
     border-radius: 10px;
     border: 2px solid black;
     height: 35px;
@@ -167,14 +167,14 @@
     font-family: 'Marko One', serif;
     font-size: 16px;
     margin-top: 26px;
-    /* padding: 5px 4px; */
+    padding: 5px 4px;
     margin-inline-start: 62px;
 }
 
 .delete:hover {
     color: #fff;
     background-color: rgb(90, 92, 88);
-}
+} */
 
 /* ******************************************************* */
 /* ******************************************************* */
@@ -260,13 +260,13 @@
     .navlist {
         flex-direction: column;
     }
-
+/* 
     #btnNav {
         padding: 9px 11px;
         background-color: white;
         color: black;
         border-radius: 8px;
-    }
+    } */
 
     #searchbar {
 
@@ -274,7 +274,7 @@
 
     }
 
-
+/* 
     #btnNotes {
         padding: 10px 10px;
         background-color: white;
@@ -289,5 +289,5 @@
         border-radius: 8px;
         width: 125px;
         padding-bottom: 28px;
-    }
+    } */
 }
