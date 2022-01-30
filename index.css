@@ -233,7 +233,7 @@
     }
 
 
-    .navigator{
+    .navigator {
         display: block;
         margin: auto;
         width: 313px;
@@ -259,5 +259,33 @@
 
     .navlist {
         flex-direction: column;
+    }
+
+    #btnNav {
+        padding: 10px 10px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+
+    #searchbar {
+
+        width: 67%;
+
+    }
+
+
+    #btnNotes {
+        padding: 10px 10px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+
+    .delete {
+        padding: 10px 10px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
     }
 }
