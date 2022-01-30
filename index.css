@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+
+/* NAVIGATION BAR */
+.navigate {
+    background-color: black;
+}
+
+.navigator {
+    display: flex;
+
+}
+
+
+.navigator img {
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+.navigator ul li {
+    padding: 2px 12px;
+    list-style: none;
+    margin-top: 23px;
+    position: relative;
+}
+
+.navigator ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Marko One', serif;
+    margin-left: 10px;
+    font-size: 19px;
+    transition: all 0.3s;
+    border-radius: 6px;
+    padding: 8px 8px;
+}
+
+.navigator ul li a:hover {
+    color: white;
+    background-color: gray;
+}
+
+/* Search Bar */
+#searchbar {
+    position: absolute;
+    right: 120px;
+    padding: 12px;
+    border: 1px solid #828486;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-family: 'Marko One', serif;
+
+}
+
+#btnNav {
+    position: absolute;
+    right: 39px;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 41px;
+    width: 79px;
+    cursor: pointer;
+    font-family: 'Marko One', serif;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+
+#btnNav:hover {
+    color: #fff;
+    background-color: rgb(90, 92, 88);
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+/* MIDDLE CONTENT */
+
+.middle-content {
+    margin-top: 30px;
+    height: 100%;
+}
+
+.container {
+    /* border: 2px solid #828486; */
+    width: 70vw;
+    display: block;
+    margin: auto;
+}
+
+#noted {
+
+    justify-content: center;
+}
+
+.container h1, h3 {
+    padding: 7px 4px;
+    font-family: 'Marko One', serif;
+}
+
+#text {
+    border: 2px solid #828486;
+    /* width: 1117px; */
+    border-radius: 10px;
+}
+
+#btnNotes {
+
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 41px;
+    width: 79px;
+    cursor: pointer;
+    font-family: 'Marko One', serif;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+#btnNotes:hover {
+    color: #fff;
+    background-color: rgb(90, 92, 88);
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+/* CARD */
+
+.card h1 {
+    padding: 7px 4px;
+    font-family: 'Marko One', serif;
+}
+
+
+
+.card {
+
+    width: 18rem;
+    border: 2px solid rgb(90, 92, 88);
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 220px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    padding: 15px 15px;
+    margin: 20px 20px;
+
+}
+
+
+.delete {
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 35px;
+    width: 79px;
+    cursor: pointer;
+    font-family: 'Marko One', serif;
+    font-size: 16px;
+    margin-top: 26px;
+    /* padding: 5px 4px; */
+    margin-inline-start: 62px;
+}
+
+.delete:hover {
+    color: #fff;
+    background-color: rgb(90, 92, 88);
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+/* FOOTER */
+.ourfooter {
+    background-color: black;
+    color: #f5f5f5;
+    text-align: center;
+    height: 70px;
+    padding-top: 24px;
+    font-family: 'Marko One', serif;
+    margin-top: 253px;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+
+}
+
+
+/* OUR FOOTER */
+
+.ourfooter {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    height: 70px;
+    padding-top: 24px;
+    font-family: 'Marko One', serif;
+}
+
+@media (max-width: 390px) {
+
+    .navigateHeight {
+
+        transition: all 0.7s ease-out;
+        padding: 10px 10px;
+        height: 70px;
+    }
+
+
+    .navigator img {
+        margin: auto;
+    }
+
+
+    .navigator{
+        display: block;
+        margin: auto;
+        width: 313px;
+    }
+
+    .navigator ul li a {
+
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .v-nav {
+        opacity: 0;
+    }
+
+    .h-nav-height {
+        height: 231px;
+    }
+
+    .navlist {
+        flex-direction: column;
+    }
+}

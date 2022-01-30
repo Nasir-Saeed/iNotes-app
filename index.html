@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-Notes</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- ************************************************************** -->
+    <section class="navigate ">
+        <nav class="navigateHeight h-nav-height">
+
+
+            <div class="navigator">
+                <img src="img/logo.jpg" alt="This Content is not available at this time" class="rightNav">
+                <ul class="navlist">
+                    <li><a href="index.html">Home</a></li>
+                    
+                </ul>
+                <input type="text" placeholder="Enter your Keyword" id="searchbar" class="rightNavs">
+                <button type="submit" id="btnNav" class="rightNavigate">Search</button>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </section>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="Notes.html">Notes</a></li>
+        </ol>
+      </nav>
+
+    <!-- ************************************************************ -->
+    <section class="middle-content">
+        <h4 id="result"></h4>
+        <div class="container">
+            <h1>i-NotesApp</h1>
+            <h3>Add a Notes</h3>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="write Something's....!"></textarea>
+            <br>
+            <button id="btnNotes">Create</button>
+        </div>
+
+        <div id="noted" class="row container-fluid nod"> </div>
+    </section>
+
+
+
+
+    <!-- ************************************************************ -->
+    <section class="footer-class">
+        <footer>
+            <div class="ourfooter">
+                © 1995-2021 i-Notes Inc. All rights reserved.
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
