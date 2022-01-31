@@ -99,7 +99,7 @@ searchbar.addEventListener("input", function () {
     let notedCards = document.getElementsByClassName("card");
 
     Array.from(notedCards).forEach(function (element) {
-        let cards = element.getElementsByTagName("p").innerText;
+        let cards = element.getElementsByTagName("p")[0].innerText;
         if (cards.includes(input)) {
             element.style.display = "block";
         }
