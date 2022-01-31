@@ -2,6 +2,7 @@ console.log("hello world");
 
 showNotes();
 
+
 // show notes:
 function showNotes() {
     let notes = localStorage.getItem("notes");
@@ -20,7 +21,7 @@ function showNotes() {
             <div class="card">
              <h1><u> Notes ${index + 1}</u></h1>
              <p>${element}</p>
-             <button id="${index}"  class="btn btn-primary" onclick="deleteNotes(this.id)">Delete</button>
+             <button id="${index}" class="btn btn-danger" onclick="deleteNotes(this.id)">Delete</button>
              <br>
          </div>
          `
@@ -33,11 +34,10 @@ function showNotes() {
 
     } else {
         notesElm.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <strong>Nothing to show! Use "Add a Note" section above to add notes.</strong> 
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <strong>Nothing to show! Use "Add a Note" section back to home to add notes.</strong> 
+                       
                         </div>`;
     }
-  
 }
 ;
 
@@ -51,9 +51,18 @@ function deleteNotes(index) {
     else {
         notesTxt = JSON.parse(notes);
     }
+
+    
     notesTxt.splice(index, 1);
     localStorage.setItem("notes", JSON.stringify(notesTxt));
     showNotes();
+    document.getElementById("result1").innerHTML = `<div class="alert btn-danger alert-dismissible fade show"   
+    role="alert"><strong>Note ${index} Deleted...!</strong> 
+    </div>`
+
+    setTimeout(() => {
+        document.getElementById("result1").innerHTML = "";
+    }, 1000)
 
 }
 
