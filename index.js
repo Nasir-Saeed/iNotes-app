@@ -77,7 +77,7 @@ function deleteNotes(index) {
         notesTxt = JSON.parse(notes);
     }
 
-    
+
     notesTxt.splice(index, 1);
     localStorage.setItem("notes", JSON.stringify(notesTxt));
     showNotes();
@@ -99,7 +99,7 @@ searchbar.addEventListener("input", function () {
     let notedCards = document.getElementsByClassName("card");
 
     Array.from(notedCards).forEach(function (element) {
-        let cards = element.getElementsByTagName("p")[0].innerText;
+        let cards = element.getElementsByTagName("p").innerText;
         if (cards.includes(input)) {
             element.style.display = "block";
         }
