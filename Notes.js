@@ -41,6 +41,7 @@ function showNotes() {
 }
 ;
 
+// Function to delete notes
 function deleteNotes(index) {
     console.log(index);
 

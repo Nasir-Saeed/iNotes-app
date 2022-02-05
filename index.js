@@ -66,6 +66,7 @@ function showNotes() {
 }
 ;
 
+// Function to delete notes
 function deleteNotes(index) {
     console.log(index);
 
@@ -91,23 +92,6 @@ function deleteNotes(index) {
 
 }
 
-
-// let searchbar = document.getElementById("searchbar");
-// searchbar.addEventListener("input", function () {
-
-//     let input = searchbar.value.toLowerCase();
-//     let notedCards = document.getElementsByClassName("card");
-
-//     Array.from(notedCards).forEach(function (element) {
-//         let cards = element.getElementsByTagName("p")[0].innerText;
-//         if (cards.includes(input)) {
-//             element.style.display = "block";
-//         }
-//         else {
-//             element.style.display = "none";
-//         }
-//     })
-// })
 
 // for search element
 let btnNav = document.getElementById("btnNav");
