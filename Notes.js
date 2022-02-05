@@ -20,7 +20,7 @@ function showNotes() {
             ` 
             <div class="card">
              <h1><u> Notes ${index + 1}</u></h1>
-             <p>${element}</p>
+             <p class= "cardP">${element}</p>
              <button id="${index}" class="btn btn-danger" onclick="deleteNotes(this.id)">Delete</button>
              <br>
          </div>
@@ -66,24 +66,26 @@ function deleteNotes(index) {
 
 }
 
+// for search element
+let btnNav = document.getElementById("btnNav");
+btnNav.addEventListener('click', function (e) {
+    e.preventDefault();
+    let searchbar = document.getElementById("searchbar").value.toLowerCase();
+    let card = document.getElementsByClassName('card');
 
-let searchbar = document.getElementById("searchbar");
-searchbar.addEventListener("input", function () {
-
-    let input = searchbar.value.toLowerCase();
-    let notedCards = document.getElementsByClassName("card");
-
-    Array.from(notedCards).forEach(function (element) {
-        let cards = element.getElementsByTagName("p")[0].innerText;
-        if (cards.includes(input)) {
-            element.style.display = "block";
+    Array.from(card).forEach(function (element) {
+        let cardP = element.getElementsByClassName("cardP")[0].innerText.toLowerCase();
+        if (cardP.includes(searchbar)) {
+            element.style.display = 'block';
+            // element.getElementsByClassName("cardP").style.color = "#ffb7b7;"; 
         }
         else {
-            element.style.display = "none";
+            element.style.display = 'none';
         }
     })
-})
 
+
+})
 
 burger = document.querySelector(".burger");
 navigateHeight = document.querySelector(".navigateHeight");
